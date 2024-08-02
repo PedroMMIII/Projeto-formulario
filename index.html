@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogos lendarios</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobilefirst.css">
 </head>
 <body>
     <header>
@@ -12,33 +12,35 @@
         <p>Preencha o formulário para indicar os jogos que você acha lendario</p>
     </header>
     <main>
-        <section>
-            <div>
-                <form action="#">
+        <section class="formulario">
+                <form action="#" method="post" autocomplete="on">
                     <div class="item-formulario">
                         <p>
                             <label for="inome">Nome <br></label>
-                            <input type="text" name="nome" id="inome">
+                            <input class="registro" type="text" name="nome" id="inome" placeholder="Digite seu nome" autocomplete="name" required>
                         </p>
                     </div>
     
                     <div class="item-formulario">
                         <p>
                             <label for="iemail">E-mail <br></label>
-                            <input type="email" name="email" id="iemail">
+                            <input class="registro" type="email" name="email" id="iemail" placeholder="Digite seu e-mail" required autocomplete="email">
                         </p>
                     </div>
     
                     <div class="item-formulario">
                         <p>
                             <label for="iidade">Idade <br></label>
-                            <input type="number" name="idade" id="iidade">
+                            <input class="registro" type="number" name="idade" id="iidade" placeholder="Digite sua idade" required autocomplete="cc-number">
                         </p>
                     </div>
     
                     <div class="item-formulario">
                         <p>
-                        
+                            Qual a frequencia que você joga? <br>
+                            <label for="ifrequente"><input class="escolha" type="radio" name="frequente" id="ifrequente">Frequente<br></label>
+                            <label for="ipoucofrequente"><input class="escolha" type="radio" name="poucofrequente" id="ipoucofrequente">Pouco frequente <br></label>
+                            <label for="inaofrequente"><input class="escolha" type="radio" name="naofrequente" id="inaofrequente">Não muito frequente</label>
                         </p>
                     </div>
 
@@ -56,8 +58,18 @@
                             </select>
                         </p>
                     </div>
+
+                    <div class="item-formulario">
+                        <p>
+                            Algum comentário ou sugestão? <br>
+                            <textarea name="sugestao" id="isugestao"></textarea>
+                        </p>
+                    </div>
+
+                    <div class="item-formulario">
+                        <input type="submit" value="Enviar">
+                    </div>
                 </form>
-            </div>
         </section>
     </main>
 </body>
