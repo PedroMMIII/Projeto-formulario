@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogos lendarios</title>
     <link rel="stylesheet" href="mobilefirst.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -38,9 +39,9 @@
                     <div class="item-formulario">
                         <p>
                             Qual a frequencia que você joga? <br>
-                            <label for="ifrequente"><input class="escolha" type="radio" name="frequente" id="ifrequente">Frequente<br></label>
-                            <label for="ipoucofrequente"><input class="escolha" type="radio" name="poucofrequente" id="ipoucofrequente">Pouco frequente <br></label>
-                            <label for="inaofrequente"><input class="escolha" type="radio" name="naofrequente" id="inaofrequente">Não muito frequente</label>
+                            <label for="ifrequente"><input class="escolha" type="radio" name="frequencia" id="ifrequente" required>Frequente<br></label>
+                            <label for="ipoucofrequente"><input class="escolha" type="radio" name="frequencia" id="ipoucofrequente">Pouco frequente <br></label>
+                            <label for="inaofrequente"><input class="escolha" type="radio" name="frequencia" id="inaofrequente">Não muito frequente</label>
                         </p>
                     </div>
 
@@ -67,7 +68,7 @@
                     </div>
 
                     <div class="item-formulario">
-                        <input type="submit" value="Enviar">
+                        <input type="submit" value="Enviar" class="botao">
                     </div>
                 </form>
         </section>
